@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './reusableCard.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import './icon_content.dart';
 
 const double bottomContainerHeight = 80;
 const darkColor = Color(0xFF1D1E33);
@@ -25,11 +27,15 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: darkColor,
+                    cardChild:
+                        IconContent(icon: FontAwesomeIcons.mars, label: "MALE"),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
                     colour: darkColor,
+                    cardChild: IconContent(
+                        icon: FontAwesomeIcons.venus, label: "FEMALE"),
                   ),
                 ),
               ],
